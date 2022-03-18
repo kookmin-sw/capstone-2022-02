@@ -1,77 +1,29 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=7011919&assignment_repo_type=AssignmentRepo)
-# Welcome to GitHub
-
-캡스톤 팀 생성을 축하합니다.
-
-## 팀소개 및 페이지를 꾸며주세요.
-
-- 프로젝트 소개
-  - 프로젝트 설치방법 및 데모, 사용방법, 프리뷰등을 readme.md에 작성.
-  - Api나 사용방법등 내용이 많을경우 wiki에 꾸미고 링크 추가.
-
-- 팀페이지 꾸미기
-  - 프로젝트 소개 및 팀원 소개
-  - index.md 예시보고 수정.
-
-- GitHub Pages 리파지토리 Settings > Options > GitHub Pages 
-  - Source를 marster branch
-  - Theme Chooser에서 태마선택
-  - 수정후 팀페이지 확인하여 점검.
-
-**팀페이지 주소** -> https://kookmin-sw.github.io/ '{{자신의 리파지토리 아이디}}'
-
-**예시)** 2020년 0조  https://kookmin-sw.github.io/capstone-2020-0/
 
 
-## 내용에 아래와 같은 내용들을 추가하세요.
 
-### 1. 프로잭트 소개
+# 펜싱 대회 운영 툴 (가제)
+### Github Link : https://github.com/kookmin-sw/capstone-2022-02
+### Github Page Link : https://kookmin-sw.github.io/capstone-2022-02
 
-프로젝트
+# 🤺프로젝트 소개
+펜싱은 최근 2020도쿄올림픽에서의 좋은 성적과 드라마 '스물다섯 스물하나' 등 많은 매체에 노출이 되면서 그 인기가 날로 높아지고 있다. 펜싱은 순발력과 유연성 강화는 물론이고 다이어트 효과도 높다. 펜데믹으로 외부활동을 하지 못하는 인한 답답한 상황 속에서 펜싱은 남녀노소 누구나 즐길 수 있는 종목이다. 
+그러나 최근 높아진 인기와 다르게 펜싱대회의 운영은 부족한 점이 많다. 대부분 팩스로 참가신청을 받고 수기로 대회를 운영해 오기입이나 착오로 불편을 격는 경우가 많다.
+이러한 문제를 해결하기 위해 대회 신청부터 운영 결과조회까지 가능한 서비스 툴을 개발하려고 한다.
+# Abstract
 
-### 2. 소개 영상
+# 기능 소개
+참가신청
+자동 조편성
+자동 결과 산출 및 대진표 출력
+현재 대회 결과 및 과거 대회 결과 조회 가능
 
-프로젝트 소개하는 영상을 추가하세요
+# 사용법 
 
-### 3. 팀 소개
+# 팀 소개
+### 김경환
+학번 : 20172612
+역할 : 백엔드
 
-팀을 소개하세요.
-
-팀원정보 및 담당이나 사진 및 SNS를 이용하여 소개하세요.
-
-### 4. 사용법
-
-소스코드제출시 설치법이나 사용법을 작성하세요.
-
-### 5. 기타
-
-추가적인 내용은 자유롭게 작성하세요.
-
-
-## Markdown을 사용하여 내용꾸미기
-
-Markdown은 작문을 스타일링하기위한 가볍고 사용하기 쉬운 구문입니다. 여기에는 다음을위한 규칙이 포함됩니다.
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-자세한 내용은 [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Support or Contact
-
-readme 파일 생성에 추가적인 도움이 필요하면 [도움말](https://help.github.com/articles/about-readmes/) 이나 [contact support](https://github.com/contact) 을 이용하세요.
+### 김원범
+학번 :
+역할 :
