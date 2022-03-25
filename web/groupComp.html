@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>groupCompetition</title>
+        <style>
+            .nav {
+                margin: 0px;
+                padding: 15px;
+                display: inline-block;
+                line-height: 100%;
+            }
+            #top_nav {
+                margin: 0;
+                border: 3px solid rgb(78, 78, 78);
+                background-color: rgb(155, 155, 155);
+                width: 100%;
+                display: flex;
+                position: sticky;
+                top: 0;
+                z-index: 1;
+            }
+            .text {
+                font-size: 20px; font-weight: bold; padding-bottom: 15px;
+            }
+            .name {
+                margin: 0;
+            }
+            #group>.versus>.player {
+                padding: 15px;
+            }
+            #group>.versus>.player>img {
+                width: 100%;
+                max-width: 150px;
+                display: block;
+            }
+            #group>.versus {
+                margin: 0% 25% 5% 25%;
+                border: 3px solid rgb(155, 155, 155);
+                background-color: bisque;
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+            }
+            #modal_bg {
+                background-color: rgba(0, 0, 0, 0.4);
+            }
+            .modal_content>.versus {
+                margin: 15% 15% 0 15%;
+                border-width: 3px 3px 1px 3px;
+                border-style: solid;
+                border-color: rgb(155, 155, 155);
+                background-color: bisque;
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+            }
+            .modal_content>.versus>.player {
+                padding: 20px;
+            }
+            .modal_content>.versus>.player img {
+                width: 250px;
+                display: block;
+            }
+            .modal_content .text {
+                font-size: 40px; font-weight: bold; padding-bottom: 30px;
+            }
+            #submit {
+                padding-top: 50px; margin: 0 15% 0 15%;
+                background-color: bisque;
+                border-width: 0 3px 3px 3px;
+                border-style: solid;
+                border-color: rgb(155, 155, 155);
+            }
+            .hidden {
+                display: none;
+            }
+        </style>
+        <script src="./script/competition.js"></script>
+    </head>
+    <body style="margin: 0;">
+        <div id="top_nav">
+            <div id="back" class="nav" style="margin: 0px; padding: 15px; width: 100%; max-width: 90px;">
+                <img src="https://www.svgrepo.com/show/18507/back-button.svg" style="max-width: 90px; width: 100%; display: block;"/>
+            </div>
+            <div id="session_name" class="nav" style="font-size: 30px; font-weight: bold; vertical-align: middle;">
+                <p>Group1</p>
+            </div>
+        </div>
+        <div id="group" style="text-align: center; position: relative; top: 100px">
+            <div class="versus">
+                <div id="player1" class="player">
+                    <p id="name1" class="name text">name1</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_8odrQguUEk4y0r47v-EpBtqpn-Iw3WiErA&usqp=CAU"/>
+                </div>
+                <div id="point1" class="point text">0</div>
+                <div class="text">vs</div>
+                <div id="point2" class="point text">0</div>
+                <div id="player2" class="player">
+                    <p id="name2" class="name text">name2</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_8odrQguUEk4y0r47v-EpBtqpn-Iw3WiErA&usqp=CAU"/>
+                </div>
+            </div>
+            <div class="versus">
+                <div id="player1" class="player">
+                    <p id="name1" class="name text">name2</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_8odrQguUEk4y0r47v-EpBtqpn-Iw3WiErA&usqp=CAU"/>
+                </div>
+                <div id="point1" class="point text">0</div>
+                <div class="text">vs</div>
+                <div id="point2" class="point text">0</div>
+                <div id="player2" class="player">
+                    <p id="name2" class="name text">name3</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_8odrQguUEk4y0r47v-EpBtqpn-Iw3WiErA&usqp=CAU"/>
+                </div>
+            </div>
+            <div class="versus">
+                <div id="player1" class="player">
+                    <p id="name1" class="name text">name3</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_8odrQguUEk4y0r47v-EpBtqpn-Iw3WiErA&usqp=CAU"/>
+                </div>
+                <div id="point1" class="point text">0</div>
+                <div class="text">vs</div>
+                <div id="point2" class="point text">0</div>
+                <div id="player2" class="player">
+                    <p id="name2" class="name text">name1</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_8odrQguUEk4y0r47v-EpBtqpn-Iw3WiErA&usqp=CAU"/>
+                </div>
+            </div>
+        </div>
+        <div id="modal_bg" class="hidden" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 5;">
+            <div class="modal_content" style="text-align: center;">
+                <div class="versus">
+                    <div id="player1" class="player">
+                        <p id="name1" class="name text">name</p>
+                        <img src="https://cdn-icons-png.flaticon.com/512/44/44463.png"/>
+                    </div>
+                    <div id="point1" class="point text">
+                        <div class="down" style="float: left; padding-top: 10px;">
+                            <img src="https://cdn-icons-png.flaticon.com/512/254/254427.png" style="width: 100%; max-width: 40px; margin-right: 15px; display: block;"/>
+                        </div>
+                        0
+                        <div class="up" style="float: right; padding-top: 10px;">
+                            <img src="https://cdn-icons-png.flaticon.com/512/254/254442.png" style="width: 100%; max-width: 40px; margin-left: 15px; display: block;"/>
+                        </div>  
+                    </div>
+                    <div class="text">vs</div>
+                    <div id="point2" class="point text">
+                        <div class="down" style="float: left; padding-top: 10px;">
+                            <img src="https://cdn-icons-png.flaticon.com/512/254/254427.png" style="width: 100%; max-width: 40px; margin-right: 15px; display: block;"/>
+                        </div>
+                        0
+                        <div class="up" style="float: right; padding-top: 10px;">
+                            <img src="https://cdn-icons-png.flaticon.com/512/254/254442.png" style="width: 100%; max-width: 40px; margin-left: 15px; display: block;"/>
+                        </div>  
+                    </div>
+                    <div id="player2" class="player">
+                        <p id="name2" class="name text">name</p>
+                        <img src="https://cdn-icons-png.flaticon.com/512/44/44463.png"/>
+                    </div>
+                </div>
+                <div id="submit">
+                    <div class="submit_btn"; style="margin: 0 40% 0 40%; padding: 15px 0 15px 0; font-size: 30px; font-weight: bold; background-color: rgb(170, 170, 170); border: 1.5px solid black; border-radius: 10px;">
+                        submit
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
