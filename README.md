@@ -10,12 +10,18 @@
 그러나 최근 높아진 인기와 다르게 펜싱대회의 운영은 부족한 점이 많다. 대부분 팩스로 참가신청을 받고 수기로 대회를 운영해 오기입이나 착오로 불편을 격는 경우가 많다.
 이러한 문제를 해결하기 위해 대회 신청부터 운영 결과조회까지 가능한 서비스 툴을 개발하려고 한다.
 # Abstract
+Fencing is increasing in popularity day by day as it has recently been exposed to many media such as good performance at the 2020 Tokyo Olympics and the drama "Twenty-five, Twenty-one." 
 
+Fencing not only strengthens quickness and flexibility, but also has a high diet effect. Fencing is an event that can be enjoyed by anyone in a frustrating situation due to the inability to engage in outside activities due to fendemics.  
+
+However, unlike the recent increase in popularity, there are many shortcomings in the operation of fencing competitions. Most of them receive applications for participation by fax and run the competition manually, causing inconvenience due to misregistration or error.  
+
+In order to solve this problem, we are trying to develop a service tool that can be used from competition application to operation results inquiry.
 # 기능 소개
-참가신청
-자동 조편성
-자동 결과 산출 및 대진표 출력
-현재 대회 결과 및 과거 대회 결과 조회 가능
+### 참가신청
+### 자동 조편성
+### 자동 결과 산출 및 대진표 출력
+### 현재 대회 결과 및 과거 대회 결과 조회 가능
 
 # 사용법 
 
@@ -25,5 +31,5 @@
 역할 : 백엔드
 
 ### 김원범
-학번 :
-역할 :
+학번 : 20163099
+역할 : 프론트엔드
