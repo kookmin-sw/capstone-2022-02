@@ -43,15 +43,29 @@
                 </ul>
             </div>
         </div>
-        <div id="content">
-            <div class="cont_main" style="margin-left: 25%; margin-right: 25%;" >
-                <div id="slide_image" style="float: left; text-align: left; width: 50%;">
-                    <p style="margin: 0;">slide_image</p>
-                </div>
-                <div id="competition_list" style="float: left; text-align: right; width: 50%;">
-                    <p style="margin: 0;">slide_list</p>
-                </div>
+        <div id="content" style="margin: 0 20% 0 20%">
+            <div id="managingBlockWrap" style="padding: 5% 0 5% 0;">
+                <a href="groupComp.html">
+                    <div class="managingBlock" style="display: flex; max-height: 300px; background-color: bisque; color: black; font-weight: bold; font-size: 20px; border: 3px solid rgb(155, 155, 155);">
+                        <div class="competitionDescription" style="width: 30%; padding: 30px 30px 30px 30px;">
+                            <div class="competitionTitle">Competition1</div>
+                            <div class="competitionCode">CompetitionCode</div>
+                            <div class="competitionLocation">LocationName</div>
+                            <div class="competitionSchedule">CompetitionSchedule</div>
+                        </div>
+                        <div class="sessionSchedule" style="padding: 30px 30px 30px 30px; margin-left: auto;">
+                            <div class="sessionProgress" style="width: 100%; text-align: right;">SessionProgress : 50%</div>
+                            <div class="sessionPart" style="width: 100%; text-align: right;">Group1: Finish</div>
+                        </div>
+                    </div>
+                </a>
             </div>
+            <form style="padding: 5% 0 5% 0;">
+                <div id="managingCode" align="center">
+                    <p><b>managingCode : </b></p><input name="code" type="text" id="code">
+                    <input type="submit">
+                </div>
+            </form>
         </div> 
     </body>
 </html>

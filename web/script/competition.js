@@ -25,6 +25,7 @@ window.onload = function () {
 window.addEventListener ("load", function () {
     var submit = document.getElementsByClassName ("submit_btn")[0];
     var modal = document.getElementById ("modal_bg");
+    var sessionSubmit = this.document.getElementById ("finish");
     submit.addEventListener ("click", function closeSession () {
         var session = document.getElementsByClassName ("versus")[i - 1];
         modal.classList.add ("hidden");
@@ -33,12 +34,15 @@ window.addEventListener ("load", function () {
         session.querySelector ("#point2").textContent = modal.querySelector ("#point2").childNodes[2].textContent;
         modal.querySelector ("#point1").childNodes[2].textContent = "0";
         modal.querySelector ("#point2").childNodes[2].textContent = "0";
+        if (i == document.getElementsByClassName ("versus").length - 1 && modal.classList.contains ("hidden")) {
+            sessionSubmit.classList.remove ("hidden");
+        }
     });
 
-    var dbtn1 = modal.getElementsByClassName ("down")[0].getElementsByTagName ("img")[0];
-    var ubtn1 = modal.getElementsByClassName ("up")[0].getElementsByTagName ("img")[0];
-    var dbtn2 = modal.getElementsByClassName ("down")[1].getElementsByTagName ("img")[0];
-    var ubtn2 = modal.getElementsByClassName ("up")[1].getElementsByTagName ("img")[0];
+    var dbtn1 = modal.getElementsByClassName ("down")[0];
+    var ubtn1 = modal.getElementsByClassName ("up")[0];
+    var dbtn2 = modal.getElementsByClassName ("down")[1];
+    var ubtn2 = modal.getElementsByClassName ("up")[1];
     dbtn1.addEventListener ("click", function () {
         var point = Number (dbtn1.parentNode.parentNode.textContent);
         if (point == 0) {return;}
@@ -62,4 +66,9 @@ window.addEventListener ("load", function () {
         point++;
         ubtn2.parentNode.parentNode.childNodes[2].textContent = String (point);
     });
+
+    sessionSubmit.addEventListener ("click", function () {
+        return;
+    });
+
 });
