@@ -1,4 +1,8 @@
 #
-/[Aa]ndroid/
-/[Bb]uild/
-/[Ii]os/
+/.idea/
+firebase_auth_login/.packages
+firebase_auth_login/.flutter-plugins-dependencies
+firebase_auth_login/.flutter-plugins
+firebase_auth_login/[Aa]ndroid
+firebase_auth_login/[Bb]uild
+firebase_auth_login/[Ii]os
