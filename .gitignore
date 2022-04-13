@@ -1,8 +1,6 @@
 #
 /.idea/
-firebase_auth_login/.packages
-firebase_auth_login/.flutter-plugins-dependencies
-firebase_auth_login/.flutter-plugins
-firebase_auth_login/[Aa]ndroid
-firebase_auth_login/[Bb]uild
-firebase_auth_login/[Ii]os
+/firebase_auth_login/*
+!/firebase_auth_login/lib
+!/firebase_auth_login/[Aa]ssets
+!/firebase_auth_login/test
