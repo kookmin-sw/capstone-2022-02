@@ -1,6 +1,6 @@
 #
 /.idea/
 /firebase_auth_login/*
-!/firebase_auth_login/lib
+!/firebase_auth_login/[Ll]ib
 !/firebase_auth_login/[Aa]ssets
-!/firebase_auth_login/test
+!/firebase_auth_login/[Tt]est
