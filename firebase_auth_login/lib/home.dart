@@ -13,10 +13,10 @@ class Home extends StatelessWidget{
             icon: const Icon(Icons.search),
             tooltip: 'party search',
             onPressed: () {
-              /*Navigator.push(context, MaterialPageRoute<void> (
+              Navigator.push(context, MaterialPageRoute<void> (
                 builder: (BuildContext context) => SearchPage(),
                 fullscreenDialog: true)
-              );*/
+              );
             },
             splashRadius: 20,
           ),
