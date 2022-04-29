@@ -1,7 +1,6 @@
 import 'package:firebase_auth_login/party_list.dart';
 import 'package:firebase_auth_login/search.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 class Home extends StatelessWidget{
   @override
@@ -14,10 +13,10 @@ class Home extends StatelessWidget{
             icon: const Icon(Icons.search),
             tooltip: 'party search',
             onPressed: () {
-              Navigator.push(context, MaterialPageRoute<void> (
+              /*Navigator.push(context, MaterialPageRoute<void> (
                 builder: (BuildContext context) => SearchPage(),
                 fullscreenDialog: true)
-              );
+              );*/
             },
             splashRadius: 20,
           ),
@@ -43,7 +42,6 @@ class Home extends StatelessWidget{
           PartyList(),
         ],
       ),
-      bottomNavigationBar: BottomAppBar (),
     );
   }
 }
