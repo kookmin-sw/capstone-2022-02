@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+
 class Maps extends StatelessWidget {
   @override
   Widget build (BuildContext context) {
@@ -8,7 +9,7 @@ class Maps extends StatelessWidget {
       appBar: AppBar (
         title: Text("Map"),
       ),
-      body: Text("map"),
+      body: Text('map'),
       
     );
   }

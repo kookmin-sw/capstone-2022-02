@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-//cloud_firebase를 이용한 query처리 필요
+//query를 이용한 search 처리 필요
 
 class SearchPage extends StatefulWidget {
   @override
