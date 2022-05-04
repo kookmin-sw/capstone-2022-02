@@ -30,5 +30,10 @@ public final class GeneratedPluginRegistrant {
     } catch(Exception e) {
       Log.e(TAG, "Error registering plugin google_sign_in, io.flutter.plugins.googlesignin.GoogleSignInPlugin", e);
     }
+    try {
+      flutterEngine.getPlugins().add(new map.naver.plugin.net.lbstech.naver_map_plugin.NaverMapPlugin());
+    } catch(Exception e) {
+      Log.e(TAG, "Error registering plugin naver_map_plugin, map.naver.plugin.net.lbstech.naver_map_plugin.NaverMapPlugin", e);
+    }
   }
 }

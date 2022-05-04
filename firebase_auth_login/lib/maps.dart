@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'map_display.dart';
 
 
 class Maps extends StatelessWidget {
@@ -9,7 +10,7 @@ class Maps extends StatelessWidget {
       appBar: AppBar (
         title: Text("Map"),
       ),
-      body: Text('map'),
+      body: MapDisplay(),
       
     );
   }

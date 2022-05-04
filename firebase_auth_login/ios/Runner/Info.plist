@@ -45,7 +45,17 @@
 	<false/>
 	<key>io.flutter.embedded_views_preview</key>
 	<true/>
+	<key>NMFClientId</key>
+	<string>6wzoram42v</string>
+	<key>io.flutter.embedded_views_preview</key>
+	<true/>
 	<key>NSAllowsArbitraryLoads</key>
 	<true/>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Always and When In Use Usage</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Always</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<stirng>When In Use Usage</key>
 </dict>
 </plist>
