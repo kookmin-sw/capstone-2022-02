@@ -2,107 +2,127 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class PartyList extends StatelessWidget {
+  const PartyList ({
+    Key? key,
+    required this.thumbnail,
+    required this.title,
+    required this.categori,
+    required this.maxNumber,
+    required this.nowNumber,
+    required this.date,
+    required this.description
+  }): super (key: key);
+  final Widget thumbnail;
+  final String title;
+  final String description;
+  final String categori;
+  final int maxNumber;
+  final int nowNumber;
+  final String date;
+
   @override
   Widget build (BuildContext context) {
-    return Container(
-      height: MediaQuery.of(context).size.height * 0.15,
-      margin: const EdgeInsets.all(10.0),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.all (Radius.circular(10.0)),
-        color: Colors.white,
-        border: Border.all(
-          width: 1.0,
-          color: Colors.grey,
-          style: BorderStyle.solid
-        ),
-        boxShadow: [BoxShadow (
-          color: Colors.grey.withOpacity(0.6),
-          spreadRadius: 1,
-          blurRadius: 3.0,
-        )]
-      ),
+    return GestureDetector (
+      onTap: () {
+        print ('tab');
+      },
+      child: Padding(
+        padding: EdgeInsets.all(10.0),
+        child: SizedBox (
+          height: MediaQuery.of(context).size.height * 0.12,
+          child: Row (
+            children: <Widget> [
+              AspectRatio(
+                aspectRatio: 1.0,
+                child: thumbnail,
+              ),
+              Expanded (
+                child: Padding (
+                  padding: EdgeInsets.only(left: 10.0),
+                  child: _PartyDescription (
+                    title: title,
+                    categori: categori,
+                    date: date,
+                    maxNumber: maxNumber,
+                    nowNumber: nowNumber,
+                  ),
+                ),
+                flex: 4,
+              )
+            ],
+          )
+        )
+      )
+    );      
+  }
+}
+
+class _PartyDescription extends StatelessWidget {
+  const _PartyDescription ({
+    Key? key,
+    required this.title ,
+    required this.categori,
+    required this.maxNumber,
+    required this.nowNumber,
+    required this.date,
+  }): super (key: key);
+  final String title;
+  final String categori;
+  final int maxNumber;
+  final int nowNumber;
+  final String date;
+
+  Widget build (BuildContext context) {
+    return Container (
       
-      child: Row (
-        children: [
-          Flexible(
-            child: Container (
-              child: Icon (Icons.sports_soccer),
-              width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.height,
-              margin: const EdgeInsets.all(5.0),
-              decoration: BoxDecoration (
-                color: Colors.blue[300],
-                borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(7.0),
-                  bottomLeft: Radius.circular(7.0)
+      child: Column (
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget> [
+          Expanded(
+            child: Column (
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget> [
+                Text (
+                  title,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: const TextStyle (
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
-              ),
+                const Padding(padding: EdgeInsets.only(bottom: 3.0)),
+                Text (
+                  categori,
+                  maxLines: 1,
+                  style: TextStyle (
+                    fontSize: 12.0,
+                  ),
+                )
+              ],
             ),
-            flex: 2,
           ),
-          Flexible (
-            child: Container (
-              width: MediaQuery.of(context).size.width,
-              margin: const EdgeInsets.all(5.0),
-              decoration: BoxDecoration (
-                borderRadius: BorderRadius.only(
-                  topRight: Radius.circular(7.0),
-                  bottomRight: Radius.circular(7.0),
+          Expanded(
+            child: Row (
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: <Widget> [
+                Text (
+                  date,
+                  style: TextStyle (
+                    fontSize: 12.0,
+                  ),
                 ),
-                color: Colors.blue[300]
-              ),
-              child: Column (
-                children: [
-                  Flexible(
-                    child: Container(
-                      width: MediaQuery.of(context).size.width,
-                      height: MediaQuery.of(context).size.height,
-                      decoration: BoxDecoration (
-                        color: Colors.red[500],
-                        borderRadius: BorderRadius.only(
-                          topRight: Radius.circular(7.0)
-                        )
-                      ),
-                      child: Center (child: Text ("파티 이름"))),
-                    flex: 1,
-                    ),
-                  Flexible(
-                    child: Container (
-                      width: MediaQuery.of(context).size.width,
-                      height: MediaQuery.of(context).size.height,
-                      color: Colors.red[500],
-                      child: Center (child: Text ("파티 설명"))),
-                    flex: 1,
+                Text (
+                  '$nowNumber / $maxNumber',
+                  style: TextStyle (
+                    fontSize: 12.0,
                   ),
-                  Flexible(
-                    child: Container (
-                      width: MediaQuery.of(context).size.width,
-                      height: MediaQuery.of(context).size.height,
-                      color: Colors.red[500],
-                      child: Center (child: Text ("운동 종목"))),
-                    flex: 1,
-                  ),
-                  Flexible(
-                    child: Container (
-                      width: MediaQuery.of(context).size.width,
-                      height: MediaQuery.of(context).size.height,
-                      decoration: BoxDecoration (
-                        color: Colors.red[500],
-                        borderRadius: BorderRadius.only(
-                          bottomRight: Radius.circular(7.0)
-                        )
-                      ),
-                      child: Center (child: Text ("1 / 4"))),
-                    flex: 1,
-                  )
-                ]
-              ),
-            ),
-            flex: 5,
-            ),
-        ],
+                )
+              ],
+            )
+          )
+        ]
       )
     );
   }
 }
-

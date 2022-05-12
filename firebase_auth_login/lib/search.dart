@@ -42,6 +42,7 @@ class _SearchPageState extends State<SearchPage> {
             onPressed: () {
               editingController.clear ();
             },
+            splashRadius: 15,
           ),
         ),
         style: TextStyle (

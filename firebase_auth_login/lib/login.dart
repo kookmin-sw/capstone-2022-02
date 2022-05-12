@@ -4,8 +4,6 @@ import 'package:firebase_auth_login/helper/login_background.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-
-
 class AuthPage extends StatelessWidget{
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   final TextEditingController _emailController = TextEditingController();

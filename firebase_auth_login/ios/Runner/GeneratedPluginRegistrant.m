@@ -18,16 +18,16 @@
 @import firebase_core;
 #endif
 
+#if __has_include(<flutter_naver_map/NaverMapPlugin.h>)
+#import <flutter_naver_map/NaverMapPlugin.h>
+#else
+@import flutter_naver_map;
+#endif
+
 #if __has_include(<google_sign_in/FLTGoogleSignInPlugin.h>)
 #import <google_sign_in/FLTGoogleSignInPlugin.h>
 #else
 @import google_sign_in;
-#endif
-
-#if __has_include(<naver_map_plugin/NaverMapPlugin.h>)
-#import <naver_map_plugin/NaverMapPlugin.h>
-#else
-@import naver_map_plugin;
 #endif
 
 @implementation GeneratedPluginRegistrant
@@ -35,8 +35,8 @@
 + (void)registerWithRegistry:(NSObject<FlutterPluginRegistry>*)registry {
   [FLTFirebaseAuthPlugin registerWithRegistrar:[registry registrarForPlugin:@"FLTFirebaseAuthPlugin"]];
   [FLTFirebaseCorePlugin registerWithRegistrar:[registry registrarForPlugin:@"FLTFirebaseCorePlugin"]];
-  [FLTGoogleSignInPlugin registerWithRegistrar:[registry registrarForPlugin:@"FLTGoogleSignInPlugin"]];
   [NaverMapPlugin registerWithRegistrar:[registry registrarForPlugin:@"NaverMapPlugin"]];
+  [FLTGoogleSignInPlugin registerWithRegistrar:[registry registrarForPlugin:@"FLTGoogleSignInPlugin"]];
 }
 
 @end
