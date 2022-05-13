@@ -26,14 +26,14 @@ public final class GeneratedPluginRegistrant {
       Log.e(TAG, "Error registering plugin firebase_core, io.flutter.plugins.firebase.core.FlutterFirebaseCorePlugin", e);
     }
     try {
-      flutterEngine.getPlugins().add(new map.naver.plugin.net.note11.naver_map_plugin.NaverMapPlugin());
-    } catch(Exception e) {
-      Log.e(TAG, "Error registering plugin flutter_naver_map, map.naver.plugin.net.note11.naver_map_plugin.NaverMapPlugin", e);
-    }
-    try {
       flutterEngine.getPlugins().add(new io.flutter.plugins.googlesignin.GoogleSignInPlugin());
     } catch(Exception e) {
       Log.e(TAG, "Error registering plugin google_sign_in, io.flutter.plugins.googlesignin.GoogleSignInPlugin", e);
+    }
+    try {
+      flutterEngine.getPlugins().add(new map.naver.plugin.net.lbstech.naver_map_plugin.NaverMapPlugin());
+    } catch(Exception e) {
+      Log.e(TAG, "Error registering plugin naver_map_plugin, map.naver.plugin.net.lbstech.naver_map_plugin.NaverMapPlugin", e);
     }
   }
 }

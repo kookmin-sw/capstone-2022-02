@@ -1,30 +1,53 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'party_detail.dart';
 
 class PartyList extends StatelessWidget {
   const PartyList ({
     Key? key,
     required this.thumbnail,
     required this.title,
-    required this.categori,
+    required this.category,
     required this.maxNumber,
     required this.nowNumber,
     required this.date,
-    required this.description
+    required this.description,
+    required this.time,
+    required this.id,
+    required this.level,
   }): super (key: key);
   final Widget thumbnail;
   final String title;
   final String description;
-  final String categori;
+  final String category;
   final int maxNumber;
   final int nowNumber;
   final String date;
+  final String time;
+  final String id;
+  final String level;
 
   @override
   Widget build (BuildContext context) {
     return GestureDetector (
       onTap: () {
-        print ('tab');
+        Navigator.push (
+          context,
+          MaterialPageRoute(
+            builder: (context) => PartyDetail (
+              thumbnail: thumbnail,
+              title: this.title,
+              category: this.category,
+              maxNumber: this.maxNumber,
+              nowNumber: this.nowNumber,
+              date: this.date,
+              time: this.time,
+              description: this.description,
+              id: this.id,
+              level: this.level,
+            )
+          ),
+        );
       },
       child: Padding(
         padding: EdgeInsets.all(10.0),
@@ -41,7 +64,7 @@ class PartyList extends StatelessWidget {
                   padding: EdgeInsets.only(left: 10.0),
                   child: _PartyDescription (
                     title: title,
-                    categori: categori,
+                    category: category,
                     date: date,
                     maxNumber: maxNumber,
                     nowNumber: nowNumber,
@@ -61,13 +84,13 @@ class _PartyDescription extends StatelessWidget {
   const _PartyDescription ({
     Key? key,
     required this.title ,
-    required this.categori,
+    required this.category,
     required this.maxNumber,
     required this.nowNumber,
     required this.date,
   }): super (key: key);
   final String title;
-  final String categori;
+  final String category;
   final int maxNumber;
   final int nowNumber;
   final String date;
@@ -92,7 +115,7 @@ class _PartyDescription extends StatelessWidget {
                 ),
                 const Padding(padding: EdgeInsets.only(bottom: 3.0)),
                 Text (
-                  categori,
+                  category,
                   maxLines: 1,
                   style: TextStyle (
                     fontSize: 12.0,

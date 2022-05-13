@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:ffi';
 import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:flutter_naver_map/flutter_naver_map.dart';
+import 'package:naver_map_plugin/naver_map_plugin.dart';
 
 class LocationSelect extends StatefulWidget {
   State<LocationSelect> createState () => _LocationSelectState();
@@ -14,7 +14,7 @@ class _LocationSelectState extends State<LocationSelect> {
 
   @override
   void initState () {
-    WidgetsBinding.instance?.addPostFrameCallback((_) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
       OverlayImage.fromAssetImage(
         assetName: 'icon/marker.png'
       ).then((image) {

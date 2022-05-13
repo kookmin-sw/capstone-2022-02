@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:flutter_naver_map/flutter_naver_map.dart';
+import 'package:naver_map_plugin/naver_map_plugin.dart';
 //query를 이용해 party 정보를 가져와 처리
 //party에 반드시 필요한 정보는 위/경도 정보
 //party 정보를 저장할 별도의 list를 관리하는 것이 좋다고 생각함
@@ -24,7 +24,7 @@ class MapDisplayState extends State<MapDisplay> {
 
   @override
   void initState() {
-    WidgetsBinding.instance?.addPostFrameCallback((_) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
       OverlayImage.fromAssetImage(
         assetName: 'icon/marker.png',
       ).then((image) {

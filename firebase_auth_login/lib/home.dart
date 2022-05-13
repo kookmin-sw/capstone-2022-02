@@ -44,7 +44,10 @@ class _HomeState extends State<Home> {
           )
         ],
       ),
-      body: _partyListView (),
+      body: Padding (
+        padding: EdgeInsets.all(15.0),
+        child: _partyListView (),
+      ),
       floatingActionButton: FloatingActionButton (
         onPressed: (() {
           Navigator.push(context, MaterialPageRoute(
@@ -67,16 +70,19 @@ class _HomeState extends State<Home> {
           for (int j = 0; j < 10; j++) {
             _party.add(
                 PartyList (
-                title: 'title',
-                categori: 'categori',
-                date: '2022-00-00',
-                maxNumber: 10,
-                nowNumber: 3,
-                thumbnail: Container (
-                  child: Icon (Icons.sports,),
-                  color: Colors.grey,
-                ),
-                description: '', 
+                  title: 'title',
+                  category: 'category',
+                  date: '2022-00-00',
+                  maxNumber: 10,
+                  nowNumber: 3,
+                  thumbnail: Container (
+                    child: Icon (Icons.sports,),
+                    color: Colors.grey,
+                  ),
+                  description: 'description',
+                  time: '00:00',
+                  id: '1234',
+                  level: '3',
               )
             );
           }

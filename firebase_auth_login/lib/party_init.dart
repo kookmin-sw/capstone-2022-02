@@ -25,6 +25,7 @@ class PartyInItState extends State<PartyInit> {
           TextButton (
             onPressed: () {
               //html connection add
+              String id = DateTime.now().toString();
             },
             child: Text (
               'Submit',
@@ -136,10 +137,10 @@ class PartyInItState extends State<PartyInit> {
                               borderSide: const BorderSide(width: 0.5)
                             ),
                           ),
-                          value: category,
+                          value: level,
                           onChanged: (newValue) {
                             setState(() {
-                              category = newValue!;
+                              level = newValue!;
                             });
                           },
                           items: <String>['One', 'Two', 'Three', 'Four', 'Five']
