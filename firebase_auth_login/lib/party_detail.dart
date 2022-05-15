@@ -13,6 +13,7 @@ class PartyDetail extends StatelessWidget {
     required this.description,
     required this.id,
     required this.level,
+    required this.loc,
   }): super (key: key);
   final Widget thumbnail;
   final String title;
@@ -24,6 +25,7 @@ class PartyDetail extends StatelessWidget {
   final String description;
   final String id;
   final String level;
+  final String loc;
 
   
   @override
@@ -37,6 +39,7 @@ class PartyDetail extends StatelessWidget {
               //html connection add
               //기존 파티 정보에 등록
               print ('onPress');
+              Navigator.pop (context);
             },
             child: Text (
               '참가',

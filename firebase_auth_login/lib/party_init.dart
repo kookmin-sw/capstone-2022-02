@@ -74,7 +74,9 @@ class PartyInItState extends State<PartyInit> {
                   ),
                 ),
               ),
-              const Padding(padding: EdgeInsets.all(6.0)),
+              const Padding(padding: const EdgeInsets.symmetric(vertical: 4.0)),
+              const Divider(height: 0, color: Colors.black54, thickness: 0.5,),
+              const Padding(padding: const EdgeInsets.symmetric(vertical: 4.0)),
               Row (
                 children: [
                   Flexible(
@@ -156,7 +158,9 @@ class PartyInItState extends State<PartyInit> {
                   ),
                 ],
               ),
-              const Padding(padding: EdgeInsets.all(6.0)),
+              const Padding(padding: const EdgeInsets.symmetric(vertical: 4.0)),
+              const Divider(height: 0, color: Colors.black54, thickness: 0.5,),
+              const Padding(padding: const EdgeInsets.symmetric(vertical: 4.0)),
               Row (
                 children: [
                   Flexible(
@@ -258,7 +262,9 @@ class PartyInItState extends State<PartyInit> {
                   ),
                 ],
               ),
-              const Padding(padding: EdgeInsets.all(6.0)),
+              const Padding(padding: const EdgeInsets.symmetric(vertical: 4.0)),
+              const Divider(height: 0, color: Colors.black54, thickness: 0.5,),
+              const Padding(padding: const EdgeInsets.symmetric(vertical: 4.0)),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 5.0, vertical: 2.0),
                 child: Text (
@@ -296,7 +302,9 @@ class PartyInItState extends State<PartyInit> {
                   _locEdit.text = lct.toString().substring(7, lct.toString().length - 1);
                 },
               ),
-              const Padding(padding: EdgeInsets.all(6.0)),
+              const Padding(padding: const EdgeInsets.symmetric(vertical: 4.0)),
+              const Divider(height: 0, color: Colors.black54, thickness: 0.5,),
+              const Padding(padding: const EdgeInsets.symmetric(vertical: 4.0)),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 5.0, vertical: 2.0),
                 child: Text (

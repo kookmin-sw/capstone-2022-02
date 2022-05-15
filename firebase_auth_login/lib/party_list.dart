@@ -15,6 +15,7 @@ class PartyList extends StatelessWidget {
     required this.time,
     required this.id,
     required this.level,
+    required this.loc,
   }): super (key: key);
   final Widget thumbnail;
   final String title;
@@ -26,6 +27,7 @@ class PartyList extends StatelessWidget {
   final String time;
   final String id;
   final String level;
+  final String loc;
 
   @override
   Widget build (BuildContext context) {
@@ -45,6 +47,7 @@ class PartyList extends StatelessWidget {
               description: this.description,
               id: this.id,
               level: this.level,
+              loc: this.loc
             )
           ),
         );

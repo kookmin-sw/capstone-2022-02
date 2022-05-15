@@ -83,6 +83,7 @@ class _HomeState extends State<Home> {
                   time: '00:00',
                   id: '1234',
                   level: '3',
+                  loc: '37.5666805, 126.9784147',
               )
             );
           }
