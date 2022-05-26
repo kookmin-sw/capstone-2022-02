@@ -1,6 +1,6 @@
 # 너만 오면 고
 ### Github Link : https://github.com/kookmin-sw/capstone-2022-02
-
+### Github Page Link : https://kookmin-sw.github.io/capstone-2022-02
 
 # 프로젝트 소개
 
