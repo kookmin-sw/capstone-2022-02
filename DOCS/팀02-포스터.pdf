@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+
+<html  dir="ltr" lang="en" xml:lang="en">
+<head>
+    <title>국민대학교 가상대학(eCampus): Log in to the site</title>
+    <link rel="shortcut icon" href="//ecampus.kookmin.ac.kr/pluginfile.php/1/theme_coursemos/favicon/1653588984/01_36.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+    <meta name="theme-color" content="#004F9F" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta property="og:type" content="website" />
+<meta property="og:title" content="국민대학교 가상대학(eCampus): Log in to the site" />
+<meta property="og:description" content="" />
+<meta property="og:url" content="https://ecampus.kookmin.ac.kr/login/index.php" />
+<meta property="og:image" content="https://ecampus.kookmin.ac.kr/theme/image.php/coursemos/theme_coursemos/1653588984/ogtag_image" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, 국민대학교 가상대학(eCampus): Log in to the site" />
+<link rel="stylesheet" type="text/css" href="https://ecampus.kookmin.ac.kr/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://ecampus.kookmin.ac.kr/theme/styles.php/coursemos/1653588984_1612100564/all" />
+<script>
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/ecampus.kookmin.ac.kr","sesskey":"ZktaCjczHO","sessiontimeout":"10800","themerev":"1653588984","slasharguments":1,"theme":"coursemos","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1653588984","admin":"admin","svgicons":true,"usertimezone":"Asia\/Seoul","contextid":1,"langrev":1653588984,"templaterev":"1653588984","lang":"en"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/ecampus.kookmin.ac.kr\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/ecampus.kookmin.ac.kr\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/ecampus.kookmin.ac.kr\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/ecampus.kookmin.ac.kr\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/ecampus.kookmin.ac.kr\/theme\/yui_combo.php?m\/1653588984\/","combine":true,"comboBase":"https:\/\/ecampus.kookmin.ac.kr\/theme\/yui_combo.php?","ext":false,"root":"m\/1653588984\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_coursemosvimeo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-beautify":{},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_htmlplus-beautify":{},"moodle-atto_htmlplus-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_htmlplus-beautify","moodle-atto_htmlplus-codemirror","event-valuechange"]},"moodle-atto_htmlplus-codemirror":{"requires":["moodle-atto_htmlplus-codemirror-skin"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_pasteimage-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/ecampus.kookmin.ac.kr\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/ecampus.kookmin.ac.kr\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1653588984\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/ecampus.kookmin.ac.kr\/lib\/javascript.php\/1653588984\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/ecampus.kookmin.ac.kr\/lib\/javascript.php\/1653588984\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+<meta name="robots" content="noindex" />
+    
+</head>
+<body  id="page-login-index" class="format-site  path-login gecko dir-ltr lang-en yui-skin-sam yui3-skin-sam ecampus-kookmin-ac-kr pagelayout-login course-1 context-1 notloggedin coursemos-loginpage coursemos-backgroundimage-4  coursemos-loginpage-ocw">
+    <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Skip to main content</a>
+</div><script src="https://ecampus.kookmin.ac.kr/lib/javascript.php/1653588984/lib/babel-polyfill/polyfill.min.js"></script>
+<script src="https://ecampus.kookmin.ac.kr/lib/javascript.php/1653588984/lib/polyfills/polyfill.js"></script>
+<script src="https://ecampus.kookmin.ac.kr/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js"></script><script src="https://ecampus.kookmin.ac.kr/theme/jquery.php/core/jquery-3.5.1.min.js"></script>
+<script src="https://ecampus.kookmin.ac.kr/lib/javascript.php/1653588984/lib/javascript-static.js"></script>
+<script src="https://ecampus.kookmin.ac.kr/theme/javascript.php/coursemos/1653588984/head"></script>
+<script>
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+<script type="text/javascript" src="https://s3.ap-northeast-2.amazonaws.com/code.coursemos.co.kr/flexiblepage_cm39.js?v=0.11"></script>
+    <div id="page">
+        <div id="page-header">
+            <a href="https://ecampus.kookmin.ac.kr" class="logo">
+                <span class="sr-only">KMU eCampus</span>
+            </a>
+        </div>
+        <div id="page-content" class="clearfix">
+            <div id="region-main">
+                <span class="notifications" id="user-notifications"></span>
+                <div role="main"><span id="maincontent"></span><div class="login-container container-fluid no-gutters
+            login-container-person
+            ">
+
+    <div class="col-loginbox col-md-4 col-lg-3 col-xl-2">
+        <div class="col-loginbox-container">
+            <div class="col-logo">
+                <a href="https://ecampus.kookmin.ac.kr" class="logo">
+                    <span class="sr-only">국민대학교 가상대학(eCampus)</span>
+                </a>
+            </div>
+            <div class="col-login col-login-person">
+                <div class="d-flex flex-wrap">
+                    <h2 class="login-title">LOGIN</h2>
+            
+                    <div class="langmenu">
+                        <div class="dropdown dropdown-lang"><a id="user-info-lang" href="#" class=" dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img class="icon " alt="English ‎(en)‎" title="English ‎(en)‎" src="https://ecampus.kookmin.ac.kr/theme/image.php/coursemos/theme_coursemos/1653588984/flag/en" />English ‎(en)‎ <span class="caret"></span> </a><ul class="dropdown-menu dropdown-menu-right" aria-labelledby="user-info-lang"><li><a href="https://ecampus.kookmin.ac.kr/login/index.php?lang=en" title="English ‎(en)‎" class="dropdown-item"><img class="icon " alt="" aria-hidden="true" src="https://ecampus.kookmin.ac.kr/theme/image.php/coursemos/theme_coursemos/1653588984/flag/en" /> English ‎(en)‎</a></li><li><a href="https://ecampus.kookmin.ac.kr/login/index.php?lang=ko" title="한국어 ‎(ko)‎" class="dropdown-item"><img class="icon " alt="" aria-hidden="true" src="https://ecampus.kookmin.ac.kr/theme/image.php/coursemos/theme_coursemos/1653588984/flag/ko" /> 한국어 ‎(ko)‎</a></li><li><a href="https://ecampus.kookmin.ac.kr/login/index.php?lang=zh_cn" title="简体中文 ‎(zh_cn)‎" class="dropdown-item"><img class="icon " alt="" aria-hidden="true" src="https://ecampus.kookmin.ac.kr/theme/image.php/coursemos/theme_coursemos/1653588984/flag/zh_cn" /> 简体中文 ‎(zh_cn)‎</a></li></ul></div>
+                    </div>
+            
+                    <form class="form-login" method="post" action="/magicsso/requestAuth.php">
+            
+                        <div class="text-submit-form">
+                            <div class="textform">
+                                <input id="anchor" type="hidden" name="anchor" value="" />
+                                <input type="hidden" name="logintoken" value="60ZeDtjjiHpbQiN7EC0EjhgN1yprKf06">
+                                <input type="text" name="loginId" id="input-username" class="form-control required"
+                                        value=""
+                                        placeholder="Username / email" />
+            
+                                <input type="password" name="loginPwd" id="input-password" value=""
+                                        class="form-control required"
+                                        placeholder="Password"
+                                        autocomplete="off" />
+            
+                            </div>
+                            <div class="submitform">
+                                <button type="submit" name="loginbutton" class="btn btn-login">
+                                    <span class="spinner-border text-light spinner-border-logining d-none" role="status">
+                                        <span class="sr-only">Login...</span>
+                                    </span>
+                                    Log in
+                                </button>
+                            </div>
+                        </div>
+            
+                        <div class="remember-find opacity">
+                            <div class="rememberpass">
+                                <div class="form-check form-check-inline">
+                                    <input type="checkbox" name="rememberusername" id="rememberusername" value="1"  class="form-check-input" />
+                                    <label class="form-check-label" for="rememberusername">Remember username</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="checkbox" name="separateaccount" id="separate-account" value="1" class="form-check-input" />
+                                    <label class="form-check-label" for="separate-account">Separate account</label>
+                                </div>
+                            </div>
+            
+                            <div class="loginfind">
+                                <div class="loginfind-item"><a href="https://portal.kookmin.ac.kr/por/pg?pgmId=P002423" target="_blank" class="link-loginfind">Forgotten your username or password?</a></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+
+            <div class="col-family">
+                <div class="row"><div class="col-6 col-md-12 col-family-item"><a class="family-link" href="http://portal.kookmin.ac.kr" target="_blank" title="Portal"><i class="family-icon fa fa-university mr-1"></i>Portal</a></div><div class="col-6 col-md-12 col-family-item"><a class="family-link" href="https://ctl.kookmin.ac.kr" target="_blank" title="CTL"><i class="family-icon fa fa-map mr-1"></i>CTL</a></div><div class="col-6 col-md-12 col-family-item"><a class="family-link" href="https://k-startrack.kookmin.ac.kr/" target="_blank" title="K-Startrack"><i class="family-icon fa fa-desktop mr-1"></i>K-Startrack</a></div><div class="col-6 col-md-12 col-family-item"><a class="family-link" href="https://ocw.kookmin.ac.kr/" target="_blank" title="KMU-OCW"><i class="family-icon fa fa-play-circle mr-1"></i>KMU-OCW</a></div><div class="col-6 col-md-12 col-family-item"><a class="family-link" href="https://www.kmooc.kr/" target="_blank" title="K-MOOC"><i class="family-icon fa fa-book mr-1"></i>K-MOOC</a></div><div class="col-6 col-md-12 col-family-item"><a class="family-link" href="https://kcms.kookmin.ac.kr/" target="_blank" title="KCMS"><i class="family-icon fa fa-youtube-play mr-1"></i>KCMS</a></div></div>
+            </div>
+        </div>
+        <div class="col-app">
+            <a href="https://itunes.apple.com/kr/app/koseumoseu2/id1142523906?l=en&amp;mt=8">
+                <img class="icon " alt="android" title="android" src="https://ecampus.kookmin.ac.kr/theme/image.php/coursemos/theme_coursemos/1653588984/app/android" />
+            </a>
+
+            <a href="https://play.google.com/store/apps/details?id=kr.coursemos.android2">
+                <img class="icon " alt="ios" title="ios" src="https://ecampus.kookmin.ac.kr/theme/image.php/coursemos/theme_coursemos/1653588984/app/ios" />
+            </a>
+        </div>
+
+        <div class="col-siteinfo">
+            <div class="langmenu">
+                <div class="dropdown dropdown-lang"><a id="user-info-lang" href="#" class=" dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img class="icon " alt="English ‎(en)‎" title="English ‎(en)‎" src="https://ecampus.kookmin.ac.kr/theme/image.php/coursemos/theme_coursemos/1653588984/flag/en" />English ‎(en)‎ <span class="caret"></span> </a><ul class="dropdown-menu dropdown-menu-right" aria-labelledby="user-info-lang"><li><a href="https://ecampus.kookmin.ac.kr/login/index.php?lang=en" title="English ‎(en)‎" class="dropdown-item"><img class="icon " alt="" aria-hidden="true" src="https://ecampus.kookmin.ac.kr/theme/image.php/coursemos/theme_coursemos/1653588984/flag/en" /> English ‎(en)‎</a></li><li><a href="https://ecampus.kookmin.ac.kr/login/index.php?lang=ko" title="한국어 ‎(ko)‎" class="dropdown-item"><img class="icon " alt="" aria-hidden="true" src="https://ecampus.kookmin.ac.kr/theme/image.php/coursemos/theme_coursemos/1653588984/flag/ko" /> 한국어 ‎(ko)‎</a></li><li><a href="https://ecampus.kookmin.ac.kr/login/index.php?lang=zh_cn" title="简体中文 ‎(zh_cn)‎" class="dropdown-item"><img class="icon " alt="" aria-hidden="true" src="https://ecampus.kookmin.ac.kr/theme/image.php/coursemos/theme_coursemos/1653588984/flag/zh_cn" /> 简体中文 ‎(zh_cn)‎</a></li></ul></div>
+            </div>
+
+            <hr class="line" />
+
+
+            <div class="address">KOOKMIN UNIVERSITY, 77 JEONGNEUNG-RO, SEONGBUK-GU, SEOUL, 02707, KOREA Tel : +82-02-910-4114 </div>
+
+        </div>
+    </div>
+    <div class="col-contentbox col-md-4 offset-md-4 col-lg-4 offset-lg-5 col-xl-3 offset-xl-7">
+        <div class="col-notice">
+            <div class="d-flex">
+                <h2 class="notice-title">Announcement</h2>
+                <div class="notice-more">
+                    <a href="https://ecampus.kookmin.ac.kr/mod/ubboard/view.php?id=1">&nbsp;</a>
+                </div>
+            </div>
+            <ul class="notice-list">
+                <li class="notice-item">
+                    <a href="https://ecampus.kookmin.ac.kr/mod/ubboard/article.php?id=1&bwid=434448" class="notice-link ">
+                        
+                        <div class="text-truncate" title="문서(파일) 변환기 오류 조치 완료 안내 ">
+                           문서(파일) 변환기 오류 조치 완료 안내 
+                        </div>
+                    </a>
+                </li>
+                <li class="notice-item">
+                    <a href="https://ecampus.kookmin.ac.kr/mod/ubboard/article.php?id=1&bwid=432626" class="notice-link ">
+                        
+                        <div class="text-truncate" title="&#039;강좌 전체 보기&#039; 편집 기능 안내 ">
+                           &#039;강좌 전체 보기&#039; 편집 기능 안내 
+                        </div>
+                    </a>
+                </li>
+                <li class="notice-item">
+                    <a href="https://ecampus.kookmin.ac.kr/mod/ubboard/article.php?id=1&bwid=426937" class="notice-link ">
+                        
+                        <div class="text-truncate" title="[학생] 파일(문서뷰어) 오류 조치 방법 안내 ">
+                           [학생] 파일(문서뷰어) 오류 조치 방법 안내 
+                        </div>
+                    </a>
+                </li>
+                <li class="notice-item">
+                    <a href="https://ecampus.kookmin.ac.kr/mod/ubboard/article.php?id=1&bwid=424920" class="notice-link ">
+                        
+                        <div class="text-truncate" title="[학생] 온라인 출석부 관련 공지 ">
+                           [학생] 온라인 출석부 관련 공지 
+                        </div>
+                    </a>
+                </li>
+                <li class="notice-item">
+                    <a href="https://ecampus.kookmin.ac.kr/mod/ubboard/article.php?id=1&bwid=417712" class="notice-link ">
+                        
+                        <div class="text-truncate" title="[KCMS 접속 문제]">
+                           [KCMS 접속 문제]
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-ocw">
+            <h4 class="ocw-title">OCW 갤러리</h4>
+            <div class="ocw-list">
+                        <a href="https://ocw.kookmin.ac.kr/운영체제-15강-메모리-보호-2" class="media">
+                            <img src="https://ocw.kookmin.ac.kr/file/imageViewer/4499" class="mr-3 media-thumb" />
+                            <div class="media-body">
+                                <h5 class="media-title" title="운영체제 15강 - 메모리 보호 2">운영체제 15강 - 메모리 보호 2</h5>
+                                <div class="description">
+                                    프로세스들 사이의 메모리 보호를 위한 하드웨어 지원과 소프트웨어 지원 기법을 이해
+                                </div>
+                                <div class="category-date">
+                                    <div class="category" title="이시윤">이시윤</div>
+                                    <div class="date">2017-06-29</div>
+                                </div>
+                            </div>
+                        </a>                        <a href="https://ocw.kookmin.ac.kr/한러경제협력론-18강-대러-제재-상황하-한러협력" class="media">
+                            <img src="https://ocw.kookmin.ac.kr/file/imageViewer/4982" class="mr-3 media-thumb" />
+                            <div class="media-body">
+                                <h5 class="media-title" title="한러경제협력론 18강 - 대러 제재 상황하 한러협력">한러경제협력론 18강 - 대러 제재 상황하 한러협력</h5>
+                                <div class="description">
+                                    우크라이나 사태이후 대러 제재구면에서 한러 협력의 가능성과 제약
+                                </div>
+                                <div class="category-date">
+                                    <div class="category" title="이상준">이상준</div>
+                                    <div class="date">2018-01-24</div>
+                                </div>
+                            </div>
+                        </a>                        <a href="https://ocw.kookmin.ac.kr/경제학설사-10강-경제학-발달사-개괄-2-현대경제학의-변모" class="media">
+                            <img src="https://ocw.kookmin.ac.kr/file/imageViewer/2435" class="mr-3 media-thumb" />
+                            <div class="media-body">
+                                <h5 class="media-title" title="경제학설사 10강 - 경제학 발달사 개괄(2) 현대경제학의 변모">경제학설사 10강 - 경제학 발달사 개괄(2) 현대경제학의 변모</h5>
+                                <div class="description">
+                                    
+                                </div>
+                                <div class="category-date">
+                                    <div class="category" title="김공회">김공회</div>
+                                    <div class="date">2015-03-27</div>
+                                </div>
+                            </div>
+                        </a>                        <a href="https://ocw.kookmin.ac.kr/국제경제학-3강-리카도모형-Ⅱ" class="media">
+                            <img src="https://ocw.kookmin.ac.kr/file/imageViewer/4688" class="mr-3 media-thumb" />
+                            <div class="media-body">
+                                <h5 class="media-title" title="국제경제학 3강 - 리카도모형(Ⅱ)">국제경제학 3강 - 리카도모형(Ⅱ)</h5>
+                                <div class="description">
+                                    리카도모형을 통해 무역의 이익과 국제가격 및 임금의 결정 등을 알아보고, 비교위위론에 대한 잘못된 인식도 살펴보고자 한다.
+                                </div>
+                                <div class="category-date">
+                                    <div class="category" title="신동필">신동필</div>
+                                    <div class="date">2017-08-02</div>
+                                </div>
+                            </div>
+                        </a>                        <a href="https://ocw.kookmin.ac.kr/한국산문의언어와사상-2강-단군신화와-해석-2" class="media">
+                            <img src="https://ocw.kookmin.ac.kr/file/imageViewer/4018" class="mr-3 media-thumb" />
+                            <div class="media-body">
+                                <h5 class="media-title" title="한국산문의언어와사상 2강 - 단군신화와 해석(2)">한국산문의언어와사상 2강 - 단군신화와 해석(2)</h5>
+                                <div class="description">
+                                    단군신화의 원문과 해석
+                                </div>
+                                <div class="category-date">
+                                    <div class="category" title="양현승">양현승</div>
+                                    <div class="date">2016-08-10</div>
+                                </div>
+                            </div>
+                        </a>                        <a href="https://ocw.kookmin.ac.kr/선물옵션-19강-The-Greek-letters" class="media">
+                            <img src="https://ocw.kookmin.ac.kr/file/imageViewer/1966" class="mr-3 media-thumb" />
+                            <div class="media-body">
+                                <h5 class="media-title" title="선물옵션 19강-The Greek letters">선물옵션 19강-The Greek letters</h5>
+                                <div class="description">
+                                    Delta hedging
+                                </div>
+                                <div class="category-date">
+                                    <div class="category" title="박기환">박기환</div>
+                                    <div class="date">2015-02-02</div>
+                                </div>
+                            </div>
+                        </a>                        <a href="https://ocw.kookmin.ac.kr/생성자" class="media">
+                            <img src="https://ocw.kookmin.ac.kr/file/imageViewer/" class="mr-3 media-thumb" />
+                            <div class="media-body">
+                                <h5 class="media-title" title="생성자">생성자</h5>
+                                <div class="description">
+                                    인스턴스를 생성하면 무조건 호출되는 메서드인 생성자에 대해 학습한다.
+                                </div>
+                                <div class="category-date">
+                                    <div class="category" title="교수학습개발센터">교수학습개발센터</div>
+                                    <div class="date">2021-06-21</div>
+                                </div>
+                            </div>
+                        </a>
+            </div>
+        </div>
+    </div>
+</div></div>
+                
+            </div>
+        </div>
+
+        <footer id="page-footer" class="bg-dark text-light">
+
+	<div class="tool_usertours-resettourcontainer"></div>
+
+	
+
+    <div id="ajax_loading_submit">&nbsp;</div>
+    <div id="ajax_loading_container">
+    	<div id="ajax_loading_submit_img">
+    		<img class="icon " alt="loading..." title="loading..." src="https://ecampus.kookmin.ac.kr/theme/image.php/coursemos/theme_coursemos/1653588984/ajax-loader" /> Loading...
+    	</div>
+    	<div id="ajax_loading_message">
+    		<p class="save_msg">Data is saved. Please wait.</p>
+    		<p class="refresh_msg">Long period of time, if refresh(F5) while loading page please.</p>
+            <p class="close_msg mb-0 text-muted">로딩 팝업이 화면을 가리고 있다면 해당 메시지를 클릭해주시기 바랍니다.</p>
+    	</div>
+    </div></footer>
+    </div>
+
+    
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-38985636-27', 'auto');
+  ga('send', 'pageview');
+
+//$('input[name="option_participants_video"]')[0].disabled = false;
+//$('input[name="option_participants_video"]')[1].disabled = false;
+//$('input[name="option_mute_upon_entry"]')[0].disabled = false;
+//$('input[name="option_mute_upon_entry"]')[1].disabled = false;
+   $('input:radio[name=option_participants_video]:input[value=1]').prop('checked',true);
+   $('input:radio[name=option_mute_upon_entry]:input[value=1]').prop("checked", true);
+
+$("input:radio[name=option_host_video]:input[value='']").prop("disabled", false);
+$("input:radio[name=option_participants_video]:input[value='']").prop("disabled", false);
+$("input:radio[name=option_mute_upon_entry]:input[value='']").prop("disabled", false);
+
+$("#id_option_jbh").prop('checked',false);
+
+
+</script><script>
+//<![CDATA[
+var require = {
+    baseUrl : 'https://ecampus.kookmin.ac.kr/lib/requirejs.php/1653588984/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://ecampus.kookmin.ac.kr/lib/javascript.php/1653588984/lib/jquery/jquery-3.5.1.min',
+        jqueryui: 'https://ecampus.kookmin.ac.kr/lib/javascript.php/1653588984/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'https://ecampus.kookmin.ac.kr/lib/javascript.php/1653588984/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script src="https://ecampus.kookmin.ac.kr/lib/javascript.php/1653588984/lib/requirejs/require.min.js"></script>
+<script>
+//<![CDATA[
+M.util.js_pending("core/first");require(['core/first'], function() {
+require(['core/prefetch']);
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp(function(videojs) {
+        videojs.options.flash.swf = "https://ecampus.kookmin.ac.kr/media/player/videojs/videojs/video-js.swf";
+videojs.addLanguage('en', {
+  "Audio Player": "Audio Player",
+  "Video Player": "Video Player",
+  "Play": "Play",
+  "Pause": "Pause",
+  "Replay": "Replay",
+  "Current Time": "Current Time",
+  "Duration": "Duration",
+  "Remaining Time": "Remaining Time",
+  "Stream Type": "Stream Type",
+  "LIVE": "LIVE",
+  "Seek to live, currently behind live": "Seek to live, currently behind live",
+  "Seek to live, currently playing live": "Seek to live, currently playing live",
+  "Loaded": "Loaded",
+  "Progress": "Progress",
+  "Progress Bar": "Progress Bar",
+  "progress bar timing: currentTime={1} duration={2}": "{1} of {2}",
+  "Fullscreen": "Fullscreen",
+  "Non-Fullscreen": "Non-Fullscreen",
+  "Mute": "Mute",
+  "Unmute": "Unmute",
+  "Playback Rate": "Playback Rate",
+  "Subtitles": "Subtitles",
+  "subtitles off": "subtitles off",
+  "Captions": "Captions",
+  "captions off": "captions off",
+  "Chapters": "Chapters",
+  "Descriptions": "Descriptions",
+  "descriptions off": "descriptions off",
+  "Audio Track": "Audio Track",
+  "Volume Level": "Volume Level",
+  "You aborted the media playback": "You aborted the media playback",
+  "A network error caused the media download to fail part-way.": "A network error caused the media download to fail part-way.",
+  "The media could not be loaded, either because the server or network failed or because the format is not supported.": "The media could not be loaded, either because the server or network failed or because the format is not supported.",
+  "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.",
+  "No compatible source was found for this media.": "No compatible source was found for this media.",
+  "The media is encrypted and we do not have the keys to decrypt it.": "The media is encrypted and we do not have the keys to decrypt it.",
+  "Play Video": "Play Video",
+  "Close": "Close",
+  "Close Modal Dialog": "Close Modal Dialog",
+  "Modal Window": "Modal Window",
+  "This is a modal window": "This is a modal window",
+  "This modal can be closed by pressing the Escape key or activating the close button.": "This modal can be closed by pressing the Escape key or activating the close button.",
+  ", opens captions settings dialog": ", opens captions settings dialog",
+  ", opens subtitles settings dialog": ", opens subtitles settings dialog",
+  ", opens descriptions settings dialog": ", opens descriptions settings dialog",
+  ", selected": ", selected",
+  "captions settings": "captions settings",
+  "subtitles settings": "subtitles settings",
+  "descriptions settings": "descriptions settings",
+  "Text": "Text",
+  "White": "White",
+  "Black": "Black",
+  "Red": "Red",
+  "Green": "Green",
+  "Blue": "Blue",
+  "Yellow": "Yellow",
+  "Magenta": "Magenta",
+  "Cyan": "Cyan",
+  "Background": "Background",
+  "Window": "Window",
+  "Transparent": "Transparent",
+  "Semi-Transparent": "Semi-Transparent",
+  "Opaque": "Opaque",
+  "Font Size": "Font Size",
+  "Text Edge Style": "Text Edge Style",
+  "None": "None",
+  "Raised": "Raised",
+  "Depressed": "Depressed",
+  "Uniform": "Uniform",
+  "Dropshadow": "Dropshadow",
+  "Font Family": "Font Family",
+  "Proportional Sans-Serif": "Proportional Sans-Serif",
+  "Monospace Sans-Serif": "Monospace Sans-Serif",
+  "Proportional Serif": "Proportional Serif",
+  "Monospace Serif": "Monospace Serif",
+  "Casual": "Casual",
+  "Script": "Script",
+  "Small Caps": "Small Caps",
+  "Reset": "Reset",
+  "restore all settings to the default values": "restore all settings to the default values",
+  "Done": "Done",
+  "Caption Settings Dialog": "Caption Settings Dialog",
+  "Beginning of dialog window. Escape will cancel and close the window.": "Beginning of dialog window. Escape will cancel and close the window.",
+  "End of dialog window.": "End of dialog window.",
+  "{1} is loading.": "{1} is loading.",
+  "Exit Picture-in-Picture": "Exit Picture-in-Picture",
+  "Picture-in-Picture": "Picture-in-Picture"
+});
+
+    });
+});;
+
+require([
+    'jquery',
+    'theme_coursemos/jquery.validate'
+], function($) {
+
+    $(".login-container .form-login").validate({
+    	submitHandler:function(form) {
+    		$(form.loginbutton).attr('disabled', 'disabled');
+            $(form.loginbutton).find('.spinner-border-logining').removeClass('d-none');
+    		form.submit();
+    	}
+    });
+
+
+
+
+
+    // 별도 계정 클릭
+    $("#separate-account").click(function() {
+
+    	var loginform = $(".login-container .form-login");
+    	var inputUsername = $("#input-username");
+    	var inputPassword = $("#input-password");
+    	var linkLoginfind = $(".login-container .link-loginfind");
+
+
+    	// sso 로그인
+    	var changeAction = '/magicsso/requestAuth.php';
+    	var changeUsername = 'loginId';
+    	var changePassword = 'loginPwd';
+    	var changeFindpwd = 'https://portal.kookmin.ac.kr/por/pg?pgmId=P002423';
+
+    	if ($(this).is(':checked')) {
+    		// 외부인 로그인
+    		changeAction = 'https://ecampus.kookmin.ac.kr/login/index.php';
+	    	changeUsername = 'username';
+	    	changePassword = 'password';
+	    	changeFindpwd = 'https://portal.kookmin.ac.kr/por/pg?pgmId=P002423';
+    	}
+
+		loginform.attr('action', changeAction);
+		inputUsername.attr('name', changeUsername);
+		inputPassword.attr('name', changePassword);
+		linkLoginfind.attr('href', changeFindpwd);
+
+    });
+});
+;
+M.util.js_pending('core/notification'); require(['core/notification'], function(amd) {amd.init(1, [], false); M.util.js_complete('core/notification');});;
+M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"warn"}); M.util.js_complete('core/log');});;
+M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});M.util.js_complete("core/first");
+});
+//]]>
+</script>
+<script src="https://ecampus.kookmin.ac.kr/theme/javascript.php/coursemos/1653588984/footer"></script>
+<script>
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Last modified","name":"Name","error":"Error","info":"Information","yes":"Yes","no":"No","cancel":"Cancel","confirm":"Confirm","areyousure":"Are you sure?","closebuttontitle":"Close","unknownerror":"Unknown error","file":"File","url":"URL"},"repository":{"type":"Type","size":"Size","invalidjson":"Invalid JSON string","nofilesattached":"No files attached","filepicker":"File picker","logout":"Logout","nofilesavailable":"No files available","norepositoriesavailable":"Sorry, none of your current repositories can return files in the required format.","fileexistsdialogheader":"File exists","fileexistsdialog_editor":"A file with that name has already been attached to the text you are editing.","fileexistsdialog_filemanager":"A file with that name has already been attached","renameto":"Rename to \"{$a}\"","referencesexist":"There are {$a} links to this file","select":"Select"},"admin":{"confirmdeletecomments":"You are about to delete comments, are you sure?","confirmation":"Confirmation"},"debug":{"debuginfo":"Debug info","line":"Line","stacktrace":"Stack trace"},"langconfig":{"labelsep":": "}};
+//]]>
+</script>
+<script>
+//<![CDATA[
+(function() {M.util.help_popups.setup(Y);
+ M.util.js_pending('random628fdc55b483b2'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random628fdc55b483b2'); });
+})();
+//]]>
+</script>
+
+</body>
+</html>
