@@ -91,9 +91,10 @@ class _InputScreenState extends State<InputScreen> {
                   },
                     dense:true,
                     title: flag?Text('운동을 할 곳을 선택하세요'):Text('${context.watch<UserNotifier>().userModel!.geoFirePoint.latitude}_${context.watch<UserNotifier>().userModel!.geoFirePoint.latitude}'), trailing: Icon(Icons.navigate_next),),
-                  _divider,
+                  _divider  ,
                   Row (
                     children: [
+                      const Padding(padding: const EdgeInsets.only(left: 15)),
                       Flexible(
                           child: Column (
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -101,7 +102,7 @@ class _InputScreenState extends State<InputScreen> {
                               Padding(
                                   padding: EdgeInsets.symmetric(horizontal: 5.0, vertical: 2.0),
                                   child: Text (
-                                    'date',
+                                    '날짜',
                                     style: TextStyle (
                                       color: Colors.black54,
                                       fontSize: 12,
@@ -113,12 +114,6 @@ class _InputScreenState extends State<InputScreen> {
                                 controller: _dateEdit,
                                 onSaved: (value) {
                                   _date = value as String;
-                                },
-                                validator: (value) {
-                                  if (value == null || value.isEmpty) {
-                                    return 'Select Date';
-                                  }
-                                  return null;
                                 },
                                 onTap: () async {
                                   DateTime? date;
@@ -135,9 +130,7 @@ class _InputScreenState extends State<InputScreen> {
                                 },
                                 decoration: InputDecoration (
                                   contentPadding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 0.0),
-                                  border: OutlineInputBorder (
-                                      borderSide: const BorderSide(width: 0.5)
-                                  ),
+                                  border: InputBorder.none,
                                 ),
                               ),
                             ],
@@ -151,7 +144,7 @@ class _InputScreenState extends State<InputScreen> {
                               Padding(
                                   padding: EdgeInsets.symmetric(horizontal: 5.0, vertical: 2.0),
                                   child: Text (
-                                    'time',
+                                    '시간',
                                     style: TextStyle (
                                       color: Colors.black54,
                                       fontSize: 12,
@@ -164,18 +157,9 @@ class _InputScreenState extends State<InputScreen> {
                                 onSaved: (value) {
                                   _time = value as String;
                                 },
-                                validator: (value) {
-                                  logger.d('value : $value');
-                                  if (value == null || value.isEmpty) {
-                                    return 'Select Time';
-                                  }
-                                  return null;
-                                },
                                 decoration: InputDecoration (
                                   contentPadding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 0.0),
-                                  border: OutlineInputBorder (
-                                      borderSide: const BorderSide(width: 0.5)
-                                  ),
+                                  border: InputBorder.none,
                                 ),
                                 onTap: () async {
                                   TimeOfDay? time;
@@ -192,14 +176,26 @@ class _InputScreenState extends State<InputScreen> {
                             ],
                           )
                       ),
+                      const Padding(padding: const EdgeInsets.only(right: 15)),
                     ],
                   ),
                   _divider,
                   Row(children: [
-                    Expanded(child: Padding(
-                      padding: const EdgeInsets.only(left: common_padding),
-                      child: TextFormField(keyboardType: TextInputType.number, controller: _levelController, decoration: InputDecoration(hintText: '요구 헬창력을 설정하세요', icon: Icon(Icons.sports_tennis_sharp, color: (_levelController.text.isEmpty)?Colors.grey:Colors.black87),focusedBorder: _border, enabledBorder: _border),),
-                    )),
+                    Expanded(
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: common_padding),
+                        child: TextFormField(
+                          keyboardType: TextInputType.number,
+                          controller: _levelController, 
+                          decoration: InputDecoration(
+                            hintText: '요구 헬창력을 설정하세요', 
+                            icon: Icon(Icons.sports_tennis_sharp, color: (_levelController.text.isEmpty)?Colors.grey:Colors.black87),
+                            focusedBorder: _border, 
+                            enabledBorder: _border
+                          ),
+                        ),
+                      )
+                    ),
                     TextButton.icon(onPressed: (){setState(() {
                       _levelLimitSelected = !_levelLimitSelected;
                     });}, icon: Icon(_levelLimitSelected?Icons.check_circle:Icons.check_circle_outline, color: _levelLimitSelected?Theme.of(context).primaryColor:Colors.black54),label: Text('설정하기', style: TextStyle(color: _levelLimitSelected?Theme.of(context).primaryColor:Colors.black54),), style: TextButton.styleFrom(backgroundColor: Colors.transparent, primary: Colors.grey))],),

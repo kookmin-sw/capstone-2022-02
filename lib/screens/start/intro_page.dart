@@ -19,7 +19,7 @@ class IntroPage extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Text('스포츠 매칭 시스템',
+                Text('너만오면고!',
                     style: Theme.of(context)
                         .textTheme
                         .headline5!
@@ -29,7 +29,7 @@ class IntroPage extends StatelessWidget {
                     height: size.height*0.5,
                     child: ExtendedImage.asset('assets/imgs/ronnie.png')),
                 Text('"최대한 무겁게, 최대한 많이"\n' '-로니콜먼-', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold,),),
-                Text('스포츠 매칭 서비스는 동네 근처 운동할 사람을 구할수 있다.\n''최고의 파트너를 구해 함께 근성장을 도모하자'),
+                Text('스포츠 매칭 어플리케이션\n\'너만오면고\' 는 동네 근처 운동할 사람을 구할수 있다.\n''최고의 파트너를 구해 함께 근성장을 도모하자'),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [

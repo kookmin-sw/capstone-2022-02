@@ -45,11 +45,13 @@ class _SignInFormState extends State<SignInForm> {
                 cursorColor: Colors.black54,
                 controller: _emailContriller,
                 decoration: textInputDecor('Email'),
+                keyboardType: TextInputType.emailAddress,
+                textInputAction: TextInputAction.next,
                 validator: (text){
                   if(text!.isNotEmpty && text.contains("@")){
                     return null;
                   }else{
-                    return '정확한 메세지를 전달해 주세요';
+                    return '정확한 이메일을 전달해 주세요';
                   }
                 },
               ),
@@ -60,6 +62,7 @@ class _SignInFormState extends State<SignInForm> {
                 decoration: textInputDecor('Password'),
                 obscuringCharacter: '*',
                 obscureText: true,
+                textInputAction: TextInputAction.done,
                 validator: (text){
                   if(text!.isNotEmpty && text.length > 5){
                     return null;
