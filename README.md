@@ -25,6 +25,8 @@ To solve these problems, "If You Come Go" helps me and my level find people near
 As a result, it is expected that people will continue to engage in more active sports activities to expand the overall base of sports events and promote national health.
 # 소개영상
 
+![Video Label](http://img.youtube.com/vi/DVP9xHk5ozw/0.jpg)](https://youtu.be/DVP9xHk5ozw?t=0s)
+
 # 시스템구성도
 
 
